@@ -1,0 +1,41 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: staging
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/indigo-dc/udocker:
+      branch: ''
+      repo: https://github.com/indigo-dc/udocker
+environment:
+  JPL_KEEPGOING: true
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/indigo-dc/udocker:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-green-cougar.sh
+        container: qc.acc_sleazy-taupe-olm
+  QC.Doc:
+    repos:
+      github.com/indigo-dc/udocker:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-puce-tamarin.sh
+        container: qc.doc_chummy-viridian-crane
+      github.com/indigo-dc/udocker__2:
+        commands:
+        - /usr/bin/env sh .sqa/script.crappy-smalt-jackal.sh
+        container: qc.doc_thirsty-fuchsia-snake
+  QC.Lic:
+    repos:
+      github.com/indigo-dc/udocker:
+        commands:
+        - /usr/bin/env sh .sqa/script.flaky-pumpkin-macaw.sh
+        container: qc.lic_woozy-lilac-bracke
+  QC.Met:
+    repos:
+      github.com/indigo-dc/udocker:
+        commands:
+        - /usr/bin/env sh .sqa/script.clammy-coral-skunk.sh
+        container: qc.met_ugly-wisteria-mayfly
+timeout: 600
