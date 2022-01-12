@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/udocker:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-green-cougar.sh
-        container: qc.acc_sleazy-taupe-olm
+        - /usr/bin/env sh .sqa/script.randy-jade-otter.sh
+        container: qc.acc_gummy-heliotrope-dalmatian
   QC.Doc:
     repos:
       github.com/indigo-dc/udocker:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-puce-tamarin.sh
-        container: qc.doc_chummy-viridian-crane
+        - /usr/bin/env sh .sqa/script.wheezy-sapphire-badger.sh
+        container: qc.doc_silly-smalt-dollar
       github.com/indigo-dc/udocker__2:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-smalt-jackal.sh
-        container: qc.doc_thirsty-fuchsia-snake
+        - /usr/bin/env sh .sqa/script.craggy-cream-mastiff.sh
+        container: qc.doc_sickly-purple-reindeer
   QC.Lic:
     repos:
       github.com/indigo-dc/udocker:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-pumpkin-macaw.sh
-        container: qc.lic_woozy-lilac-bracke
+        - /usr/bin/env sh .sqa/script.hasty-carmine-dragon.sh
+        container: qc.lic_gloppy-cornflower-pig
   QC.Met:
     repos:
       github.com/indigo-dc/udocker:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-coral-skunk.sh
-        container: qc.met_ugly-wisteria-mayfly
+        - /usr/bin/env sh .sqa/script.sunny-harlequin-ibis.sh
+        container: qc.met_pasty-purple-orangutan
 timeout: 600
