@@ -5,37 +5,37 @@ config:
       branch: staging
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/indigo-dc/udocker:
-      branch: ''
       repo: https://github.com/indigo-dc/udocker
 environment:
-  JPL_KEEPGOING: true
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/indigo-dc/udocker:
+      github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-jade-otter.sh
-        container: qc.acc_gummy-heliotrope-dalmatian
+        - /usr/bin/env sh .sqa/script.baggy-orchid-stingray.sh
+        container: qc.acc_flimsy-malachite-shrimp
   QC.Doc:
     repos:
-      github.com/indigo-dc/udocker:
+      github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-sapphire-badger.sh
-        container: qc.doc_silly-smalt-dollar
-      github.com/indigo-dc/udocker__2:
+        - /usr/bin/env sh .sqa/script.breezy-eggplant-wasp.sh
+        container: qc.doc_nippy-jade-birman
+      github.com/indigo-dc/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-cream-mastiff.sh
-        container: qc.doc_sickly-purple-reindeer
+        - /usr/bin/env sh .sqa/script.bluesy-blue-chipmunk.sh
+        container: qc.doc_stinky-amaranth-gopher
   QC.Lic:
     repos:
-      github.com/indigo-dc/udocker:
+      github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-carmine-dragon.sh
-        container: qc.lic_gloppy-cornflower-pig
+        - /usr/bin/env sh .sqa/script.wiggy-orange-toucan.sh
+        container: qc.lic_snazzy-platinum-dane
   QC.Met:
     repos:
-      github.com/indigo-dc/udocker:
+      github.com/indigo-dc/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-harlequin-ibis.sh
-        container: qc.met_pasty-purple-orangutan
+        - /usr/bin/env sh .sqa/script.pasty-amaranth-maltese.sh
+        container: qc.met_silly-orange-zonkey
 timeout: 600
