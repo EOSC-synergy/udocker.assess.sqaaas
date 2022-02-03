@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-viridian-liger.sh
-        container: qc.acc_woozy-copper-cuttlefish
+        - /usr/bin/env sh .sqa/script.lumpy-cardinal-camel.sh
+        container: qc.acc_silly-rose-cow
   QC.Doc:
     repos:
       github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-fuchsia-reindeer.sh
-        container: qc.doc_lumpy-brass-dragon
+        - /usr/bin/env sh .sqa/script.stealthy-lilac-terrier.sh
+        container: qc.doc_smelly-eggplant-cattle
       github.com/indigo-dc/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-brown-hamster.sh
-        container: qc.doc_cranky-magenta-dhole
+        - /usr/bin/env sh .sqa/script.shaggy-emerald-lizard.sh
+        container: qc.doc_shaggy-scarlet-dormouse
   QC.Lic:
     repos:
       github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-amaranth-cougar.sh
-        container: qc.lic_tacky-amethyst-ragdoll
+        - /usr/bin/env sh .sqa/script.paltry-amaranth-seahorse.sh
+        container: qc.lic_lovely-malachite-manatee
   QC.Met:
     repos:
       github.com/indigo-dc/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-sangria-dodo.sh
-        container: qc.met_skanky-pear-devil
+        - /usr/bin/env sh .sqa/script.slimy-azure-ladybird.sh
+        container: qc.met_skimpy-tan-goose
 timeout: 600
