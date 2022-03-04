@@ -47,7 +47,7 @@ services:
     working_dir: /sqaaas-build
   qc.sec_randy-green-frog:
     command: sleep 6000000
-    image: secfigo/bandit
+    image: cytopia/bandit
     volumes:
     - source: ./
       target: /sqaaas-build
