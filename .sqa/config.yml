@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/bandit
+      branch: feature/flake8
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/indigo-dc/udocker:
       repo: https://github.com/indigo-dc/udocker
@@ -14,34 +14,40 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-orange-setter.sh
-        container: qc.acc_flabby-thistle-earwig
+        - /usr/bin/env sh .sqa/script.nerdy-ultramarine-numbat.sh
+        container: qc.acc_cloudy-cobalt-crab
   QC.Doc:
     repos:
       github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-coral-kudu.sh
-        container: qc.doc_snoopy-yellow-slug
+        - /usr/bin/env sh .sqa/script.stinky-ivory-paradise.sh
+        container: qc.doc_hazy-grey-drever
       github.com/indigo-dc/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-cyan-hyena.sh
-        container: qc.doc_ready-malachite-seal
+        - /usr/bin/env sh .sqa/script.nippy-carmine-mammoth.sh
+        container: qc.doc_boozy-gold-cheetah
   QC.Lic:
     repos:
       github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-emerald-lemur.sh
-        container: qc.lic_wiggy-ecru-gorilla
+        - /usr/bin/env sh .sqa/script.squeaky-purple-rat.sh
+        container: qc.lic_flimsy-champagne-chihuahua
   QC.Met:
     repos:
       github.com/indigo-dc/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-ruby-raccoon.sh
-        container: qc.met_shabby-denim-echidna
+        - /usr/bin/env sh .sqa/script.squirrely-gamboge-maltese.sh
+        container: qc.met_beady-mustard-quail
   QC.Sec:
     repos:
       github.com/indigo-dc/udocker bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-orange-impala.sh
-        container: qc.sec_jumpy-dandelion-meerkat
+        - /usr/bin/env sh .sqa/script.pasty-wisteria-moorhen.sh
+        container: qc.sec_queasy-indigo-slug
+  QC.Sty:
+    repos:
+      github.com/indigo-dc/udocker flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-tomato-javanese.sh
+        container: qc.sty_craggy-chocolate-chameleon
 timeout: 600
