@@ -1,3 +1,3 @@
 (
-cd github.com/indigo-dc/udocker && bandit --confidence-level high --severity-level high --recursive .
+cd github.com/indigo-dc/udocker && bandit -f json --confidence-level high --severity-level high --recursive .
 )
