@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: staging
+      branch: feature/bandit
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/indigo-dc/udocker:
       repo: https://github.com/indigo-dc/udocker
@@ -14,28 +14,34 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-taupe-mastiff.sh
-        container: qc.acc_shaky-sapphire-dingo
+        - /usr/bin/env sh .sqa/script.nerdy-denim-tzu.sh
+        container: qc.acc_lumpy-firebrick-markhor
   QC.Doc:
     repos:
       github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-emerald-hound.sh
-        container: qc.doc_breezy-cyan-gorilla
+        - /usr/bin/env sh .sqa/script.hasty-pear-mastiff.sh
+        container: qc.doc_goopy-pear-dhole
       github.com/indigo-dc/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-cerulean-fossa.sh
-        container: qc.doc_wiggy-lilac-fowl
+        - /usr/bin/env sh .sqa/script.snappy-burgundy-fox.sh
+        container: qc.doc_sunny-amaranth-skunk
   QC.Lic:
     repos:
       github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-coral-chinook.sh
-        container: qc.lic_snoopy-xanthic-coral
+        - /usr/bin/env sh .sqa/script.randy-gold-budgerigar.sh
+        container: qc.lic_scummy-goldenrod-leopard
   QC.Met:
     repos:
       github.com/indigo-dc/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-purple-cockroach.sh
-        container: qc.met_cozy-rust-dormouse
+        - /usr/bin/env sh .sqa/script.pasty-ecru-spitz.sh
+        container: qc.met_paltry-olivine-squirt
+  QC.Sec:
+    repos:
+      github.com/indigo-dc/udocker bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-bronze-gopher.sh
+        container: qc.sec_randy-green-frog
 timeout: 600
