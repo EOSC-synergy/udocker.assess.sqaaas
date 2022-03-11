@@ -2,9 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/flake8
+      branch: release/1.1.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/indigo-dc/udocker:
+      branch: master
       repo: https://github.com/indigo-dc/udocker
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -14,40 +15,28 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-ultramarine-numbat.sh
-        container: qc.acc_cloudy-cobalt-crab
+        - /usr/bin/env sh .sqa/script.fuzzy-rust-guppy.sh
+        container: qc.acc_homely-pear-gopher
   QC.Doc:
     repos:
       github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-ivory-paradise.sh
-        container: qc.doc_hazy-grey-drever
+        - /usr/bin/env sh .sqa/script.droopy-sepia-zorse.sh
+        container: qc.doc_squirrely-crimson-whippet
       github.com/indigo-dc/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-carmine-mammoth.sh
-        container: qc.doc_boozy-gold-cheetah
+        - /usr/bin/env sh .sqa/script.pokey-aquamarine-ray.sh
+        container: qc.doc_lovely-emerald-snake
   QC.Lic:
     repos:
       github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-purple-rat.sh
-        container: qc.lic_flimsy-champagne-chihuahua
+        - /usr/bin/env sh .sqa/script.geeky-lilac-drever.sh
+        container: qc.lic_muggy-violet-octopus
   QC.Met:
     repos:
       github.com/indigo-dc/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-gamboge-maltese.sh
-        container: qc.met_beady-mustard-quail
-  QC.Sec:
-    repos:
-      github.com/indigo-dc/udocker bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.pasty-wisteria-moorhen.sh
-        container: qc.sec_queasy-indigo-slug
-  QC.Sty:
-    repos:
-      github.com/indigo-dc/udocker flake8:
-        commands:
-        - /usr/bin/env sh .sqa/script.woolly-tomato-javanese.sh
-        container: qc.sty_craggy-chocolate-chameleon
+        - /usr/bin/env sh .sqa/script.lousy-zucchini-dragonfly.sh
+        container: qc.met_gummy-crimson-starfish
 timeout: 600
