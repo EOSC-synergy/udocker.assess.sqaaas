@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.1.0
+      branch: 1.7.0_no_kubectl
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/indigo-dc/udocker:
-      branch: master
+      branch: dev-v1.4
       repo: https://github.com/indigo-dc/udocker
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,28 +15,56 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-rust-guppy.sh
-        container: qc.acc_homely-pear-gopher
+        - /usr/bin/env sh .sqa/script.bumpy-taupe-rabbit.sh
+        container: qc.acc_messy-cornflower-badger
   QC.Doc:
     repos:
       github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-sepia-zorse.sh
-        container: qc.doc_squirrely-crimson-whippet
+        - /usr/bin/env sh .sqa/script.lovely-ochre-magpie.sh
+        container: qc.doc_ready-jade-bordeaux
+      github.com/indigo-dc/udocker git:
+        commands:
+        - /usr/bin/env sh .sqa/script.chewy-taupe-quokka.sh
+        container: qc.doc_cheeky-amber-tortoise
       github.com/indigo-dc/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-aquamarine-ray.sh
-        container: qc.doc_lovely-emerald-snake
+        - /usr/bin/env sh .sqa/script.surly-platinum-dane.sh
+        container: qc.doc_pretty-alizarin-otter
+  QC.FAIR:
+    repos:
+      github.com/indigo-dc/udocker F-UJI:
+        commands:
+        - /usr/bin/env sh .sqa/script.shaggy-ruby-bobcat.sh
+        container: qc.fair_sleazy-carmine-affenpinscher
   QC.Lic:
     repos:
       github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-lilac-drever.sh
-        container: qc.lic_muggy-violet-octopus
+        - /usr/bin/env sh .sqa/script.lousy-tan-catfish.sh
+        container: qc.lic_blurry-mauve-bison
   QC.Met:
     repos:
       github.com/indigo-dc/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-zucchini-dragonfly.sh
-        container: qc.met_gummy-crimson-starfish
-timeout: 600
+        - /usr/bin/env sh .sqa/script.sickly-smalt-caiman.sh
+        container: qc.met_homely-taupe-lionfish
+  QC.Sec:
+    repos:
+      github.com/indigo-dc/udocker bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.leaky-cardinal-termite.sh
+        container: qc.sec_hasty-salmon-chow
+  QC.Sty:
+    repos:
+      github.com/indigo-dc/udocker flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.flimsy-wisteria-tarsier.sh
+        container: qc.sty_stealthy-celadon-sheep
+  QC.Ver:
+    repos:
+      github.com/indigo-dc/udocker get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.woozy-coral-beetle.sh
+        container: qc.ver_flaky-flax-barb
+timeout: 1800
