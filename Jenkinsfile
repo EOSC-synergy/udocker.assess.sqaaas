@@ -1,4 +1,4 @@
-@Library(['github.com/indigo-dc/jenkins-pipeline-library@fix/pull_always]) _
+@Library(['github.com/indigo-dc/jenkins-pipeline-library@fix/pull_always']) _
 
 def projectConfig
 
