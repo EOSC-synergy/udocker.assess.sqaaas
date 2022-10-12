@@ -1,4 +1,4 @@
 (
 cd github.com/indigo-dc/udocker &&
-    git tag --sort=-taggerdate
+    get_git_tags.py
 )
