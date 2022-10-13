@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.4
+      branch: release/1.7.3
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/indigo-dc/udocker:
       branch: devel3
@@ -15,54 +15,52 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-taupe-newt.sh
-        container: qc.acc_woolly-alizarin-gharial
+        - /usr/bin/env sh .sqa/script.stuffy-razzmatazz-abyssinian.sh
+        container: qc.acc_ugly-orchid-warthog
   QC.Doc:
     repos:
       github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-linen-dog.sh
-        container: qc.doc_randy-scarlet-whale
+        - /usr/bin/env sh .sqa/script.freaky-azure-bee.sh
+        container: qc.doc_snippy-cerise-akbash
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-ivory-akbash.sh
-        container: qc.doc_cloudy-magnolia-loon
+        - /usr/bin/env sh .sqa/script.ready-cardinal-chameleon.sh
+        container: qc.doc_flimsy-lilac-dugong
       github.com/indigo-dc/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-aqua-abyssinian.sh
-        container: qc.doc_skimpy-cyan-cow
+        - /usr/bin/env sh .sqa/script.trippy-magnolia-pinscher.sh
+        container: qc.doc_bumpy-brass-bombay
   QC.Lic:
     repos:
       github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-ruby-seahorse.sh
-        container: qc.lic_baggy-cerulean-monkey
-  QC.Met:
-    repos:
-      github.com/indigo-dc/udocker validate_codemeta:
-        commands:
-        - /usr/bin/env sh .sqa/script.cloudy-ecru-corgi.sh
-        container: qc.met_tasty-viridian-blue
+        - /usr/bin/env sh .sqa/script.homely-magenta-tamarin.sh
+        container: qc.lic_beady-denim-cattle
   QC.Sec:
     repos:
       github.com/indigo-dc/udocker bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-corn-anteater.sh
-        container: qc.sec_silly-orange-malamute
+        - /usr/bin/env sh .sqa/script.flabby-corn-harrier.sh
+        container: qc.sec_hazy-burgundy-bordeaux
   QC.Sty:
     repos:
       github.com/indigo-dc/udocker flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-periwinkle-millipede.sh
-        container: qc.sty_beady-goldenrod-anteater
+        - /usr/bin/env sh .sqa/script.bluesy-teal-cichlid.sh
+        container: qc.sty_zippy-seashell-frise
+      github.com/indigo-dc/udocker hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.flabby-beige-fox.sh
+        container: qc.sty_randy-olivine-gecko
       github.com/indigo-dc/udocker jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-silver-tetra.sh
-        container: qc.sty_chummy-magenta-gharial
+        - /usr/bin/env sh .sqa/script.clammy-bistre-booby.sh
+        container: qc.sty_cloudy-maroon-moth
   QC.Ver:
     repos:
       github.com/indigo-dc/udocker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-sepia-beaver.sh
-        container: qc.ver_boozy-champagne-ostrich
+        - /usr/bin/env sh .sqa/script.muzzy-mustard-pig.sh
+        container: qc.ver_shaky-black-beagle
 timeout: 1800
