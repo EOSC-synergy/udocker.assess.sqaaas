@@ -4,69 +4,65 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.5
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/indigo-dc/udocker:
-      branch: dev-v1.4
-      repo: https://github.com/indigo-dc/udocker
+    github.com/orviz/udocker:
+      branch: master
+      repo: https://github.com/orviz/udocker
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/indigo-dc/udocker git:
+      github.com/orviz/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-rust-bird.sh
-        container: qc.acc_ugly-magnolia-bongo
+        - /usr/bin/env sh .sqa/script.squirrely-lime-fowl.sh
+        container: qc.acc_hazy-olive-woodpecker
   QC.Doc:
     repos:
-      github.com/indigo-dc/udocker find_doc_files.py:
+      github.com/orviz/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-orchid-quoll.sh
-        container: qc.doc_goopy-magenta-goat
-      github.com/indigo-dc/udocker git:
+        - /usr/bin/env sh .sqa/script.paltry-turquoise-butterfly.sh
+        container: qc.doc_slimy-russet-bee
+      github.com/orviz/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-xanthic-owl.sh
-        container: qc.doc_surly-scarlet-hummingbird
-      github.com/indigo-dc/udocker markdownlint:
+        - /usr/bin/env sh .sqa/script.randy-tomato-kudu.sh
+        container: qc.doc_chummy-brass-vole
+      github.com/orviz/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-grey-scorpion.sh
-        container: qc.doc_lanky-magenta-bombay
+        - /usr/bin/env sh .sqa/script.stealthy-smalt-tiger.sh
+        container: qc.doc_muggy-beige-earwig
   QC.Lic:
     repos:
-      github.com/indigo-dc/udocker licensee:
+      github.com/orviz/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-gold-bat.sh
-        container: qc.lic_seedy-khaki-binturong
+        - /usr/bin/env sh .sqa/script.crabby-azure-quoll.sh
+        container: qc.lic_breezy-denim-discus
   QC.Met:
     repos:
-      github.com/indigo-dc/udocker validate_codemeta:
+      github.com/orviz/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-vermilion-rat.sh
-        container: qc.met_silly-xanthic-barb
+        - /usr/bin/env sh .sqa/script.woozy-magnolia-ragdoll.sh
+        container: qc.met_frumpy-amaranth-donkey
   QC.Sec:
     repos:
-      github.com/indigo-dc/udocker bandit:
+      github.com/orviz/udocker bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-silver-barnacle.sh
-        container: qc.sec_hazy-scarlet-binturong
+        - /usr/bin/env sh .sqa/script.sleazy-lilac-crane.sh
+        container: qc.sec_sunny-orchid-duck
   QC.Sty:
     repos:
-      github.com/indigo-dc/udocker flake8:
+      github.com/orviz/udocker flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-olivine-hamster.sh
-        container: qc.sty_scaly-puce-guppy
-      github.com/indigo-dc/udocker hadolint:
+        - /usr/bin/env sh .sqa/script.shabby-lilac-tapir.sh
+        container: qc.sty_blurry-violet-gopher
+      github.com/orviz/udocker jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-asparagus-cheetah.sh
-        container: qc.sty_beady-indigo-macaw
-      github.com/indigo-dc/udocker jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-gold-caracal.sh
-        container: qc.sty_gamy-corn-cockroach
+        - /usr/bin/env sh .sqa/script.nippy-cyan-okapi.sh
+        container: qc.sty_skinny-harlequin-chimpanzee
   QC.Ver:
     repos:
-      github.com/indigo-dc/udocker get_git_tags.py:
+      github.com/orviz/udocker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-plum-ladybird.sh
-        container: qc.ver_crabby-cinnabar-sponge
+        - /usr/bin/env sh .sqa/script.hasty-cinnamon-centipede.sh
+        container: qc.ver_nerdy-orange-fox
 timeout: 5400
