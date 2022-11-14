@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/orviz/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-gamboge-akbash.sh
-        container: qc.acc_scanty-blue-impala
+        - /usr/bin/env sh .sqa/script.sunny-black-argentino.sh
+        container: qc.acc_sunny-ochre-mouse
   QC.Doc:
     repos:
       github.com/orviz/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-peach-rattlesnake.sh
-        container: qc.doc_woolly-coral-caracal
+        - /usr/bin/env sh .sqa/script.boozy-aquamarine-ferret.sh
+        container: qc.doc_ugly-saffron-shrew
       github.com/orviz/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-wheat-grouse.sh
-        container: qc.doc_breezy-corn-lynx
+        - /usr/bin/env sh .sqa/script.sunny-gold-uakari.sh
+        container: qc.doc_scummy-alizarin-frise
       github.com/orviz/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-ochre-crane.sh
-        container: qc.doc_chummy-amethyst-axolotl
+        - /usr/bin/env sh .sqa/script.baggy-lime-crab.sh
+        container: qc.doc_snoopy-lemon-bombay
   QC.Lic:
     repos:
       github.com/orviz/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-olive-eleuth.sh
-        container: qc.lic_freaky-wheat-setter
+        - /usr/bin/env sh .sqa/script.tacky-chartreuse-sponge.sh
+        container: qc.lic_randy-maroon-hyena
   QC.Met:
     repos:
       github.com/orviz/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-brown-slug.sh
-        container: qc.met_wheezy-tomato-spitz
+        - /usr/bin/env sh .sqa/script.silly-heliotrope-shark.sh
+        container: qc.met_wiggy-ultramarine-eagle
   QC.Sec:
     repos:
       github.com/orviz/udocker bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-russet-rat.sh
-        container: qc.sec_pokey-silver-kangaroo
+        - /usr/bin/env sh .sqa/script.greasy-smalt-moose.sh
+        container: qc.sec_paltry-viridian-macaw
   QC.Sty:
     repos:
       github.com/orviz/udocker flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-lemon-pig.sh
-        container: qc.sty_jumpy-apricot-monster
+        - /usr/bin/env sh .sqa/script.shabby-gold-lemming.sh
+        container: qc.sty_bluesy-pear-birman
       github.com/orviz/udocker jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-teal-tamarin.sh
-        container: qc.sty_slimy-fuchsia-squirt
+        - /usr/bin/env sh .sqa/script.skanky-sangria-starfish.sh
+        container: qc.sty_lumpy-heliotrope-fly
   QC.Ver:
     repos:
       github.com/orviz/udocker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-orange-slug.sh
-        container: qc.ver_baggy-aqua-macaque
+        - /usr/bin/env sh .sqa/script.blurry-wisteria-salamander.sh
+        container: qc.ver_snoopy-jade-wildebeest
 timeout: 1800
