@@ -4,65 +4,65 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.5
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/orviz/udocker:
-      branch: master
-      repo: https://github.com/orviz/udocker
+    github.com/indigo-dc/udocker:
+      branch: devel3
+      repo: https://github.com/indigo-dc/udocker
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/orviz/udocker git:
+      github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-seashell-otter.sh
-        container: qc.acc_droopy-ecru-frigatebird
+        - /usr/bin/env sh .sqa/script.sleepy-lime-corgi.sh
+        container: qc.acc_geeky-bronze-tiger
   QC.Doc:
     repos:
-      github.com/orviz/udocker find_doc_files.py:
+      github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-chartreuse-argentino.sh
-        container: qc.doc_thirsty-pumpkin-grouse
-      github.com/orviz/udocker git:
+        - /usr/bin/env sh .sqa/script.freaky-gamboge-boar.sh
+        container: qc.doc_scanty-cinnabar-wolverine
+      github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-sepia-mule.sh
-        container: qc.doc_messy-rose-dragon
-      github.com/orviz/udocker markdownlint:
+        - /usr/bin/env sh .sqa/script.muggy-beige-sheepdog.sh
+        container: qc.doc_cozy-chocolate-tiger
+      github.com/indigo-dc/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-maroon-turtle.sh
-        container: qc.doc_goopy-amber-urchin
+        - /usr/bin/env sh .sqa/script.grumpy-orchid-bordeaux.sh
+        container: qc.doc_scummy-mauve-barb
   QC.Lic:
     repos:
-      github.com/orviz/udocker licensee:
+      github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-khaki-opossum.sh
-        container: qc.lic_grumpy-copper-crane
+        - /usr/bin/env sh .sqa/script.woolly-pumpkin-tamarin.sh
+        container: qc.lic_skimpy-pink-lemming
   QC.Met:
     repos:
-      github.com/orviz/udocker validate_codemeta:
+      github.com/indigo-dc/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-red-jackal.sh
-        container: qc.met_sunny-sepia-insect
+        - /usr/bin/env sh .sqa/script.boozy-black-tiger.sh
+        container: qc.met_tacky-lilac-bonobo
   QC.Sec:
     repos:
-      github.com/orviz/udocker bandit:
+      github.com/indigo-dc/udocker bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-orange-guppy.sh
-        container: qc.sec_grumpy-crimson-frog
+        - /usr/bin/env sh .sqa/script.bluesy-indigo-tarsier.sh
+        container: qc.sec_snippy-scarlet-bird
   QC.Sty:
     repos:
-      github.com/orviz/udocker flake8:
+      github.com/indigo-dc/udocker flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-grey-hedgehog.sh
-        container: qc.sty_nerdy-periwinkle-wrasse
-      github.com/orviz/udocker jsonlint:
+        - /usr/bin/env sh .sqa/script.hazy-apricot-llama.sh
+        container: qc.sty_queasy-orange-macaque
+      github.com/indigo-dc/udocker jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-bronze-axolotl.sh
-        container: qc.sty_droopy-pear-bongo
+        - /usr/bin/env sh .sqa/script.stealthy-amber-horse.sh
+        container: qc.sty_slimy-aqua-fousek
   QC.Ver:
     repos:
-      github.com/orviz/udocker get_git_tags.py:
+      github.com/indigo-dc/udocker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-lilac-avocet.sh
-        container: qc.ver_wimpy-indigo-dachsbracke
+        - /usr/bin/env sh .sqa/script.crabby-firebrick-whippet.sh
+        container: qc.ver_cozy-champagne-reindeer
 timeout: 1800
