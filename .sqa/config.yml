@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/orviz/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-salmon-rat.sh
-        container: qc.acc_muzzy-thistle-hedgehog
+        - /usr/bin/env sh .sqa/script.hasty-cardinal-angelfish.sh
+        container: qc.acc_lanky-zucchini-goat
   QC.Doc:
     repos:
       github.com/orviz/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-sangria-chihuahua.sh
-        container: qc.doc_homey-viridian-uguisu
+        - /usr/bin/env sh .sqa/script.tacky-silver-sheep.sh
+        container: qc.doc_breezy-carmine-vole
       github.com/orviz/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-coral-emu.sh
-        container: qc.doc_cranky-cerise-frise
+        - /usr/bin/env sh .sqa/script.snippy-denim-sparrow.sh
+        container: qc.doc_leaky-ivory-okapi
       github.com/orviz/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-dandelion-warthog.sh
-        container: qc.doc_woolly-yellow-falcon
+        - /usr/bin/env sh .sqa/script.snappy-aquamarine-buffalo.sh
+        container: qc.doc_lanky-corn-robin
   QC.Lic:
     repos:
       github.com/orviz/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-cyan-mist.sh
-        container: qc.lic_blurry-heliotrope-raccoon
+        - /usr/bin/env sh .sqa/script.muggy-ivory-foxhound.sh
+        container: qc.lic_droopy-heliotrope-squirrel
   QC.Met:
     repos:
       github.com/orviz/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-cardinal-oyster.sh
-        container: qc.met_muggy-rust-dogfish
+        - /usr/bin/env sh .sqa/script.skanky-asparagus-wolf.sh
+        container: qc.met_trippy-tangerine-lemur
   QC.Sec:
     repos:
       github.com/orviz/udocker bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-gamboge-tiger.sh
-        container: qc.sec_blurry-zucchini-retriever
+        - /usr/bin/env sh .sqa/script.lovely-sepia-dachsbracke.sh
+        container: qc.sec_crappy-pumpkin-macaw
   QC.Sty:
     repos:
       github.com/orviz/udocker flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-ultramarine-molly.sh
-        container: qc.sty_grumpy-chocolate-anteater
+        - /usr/bin/env sh .sqa/script.crabby-asparagus-mole.sh
+        container: qc.sty_cloudy-seashell-mayfly
       github.com/orviz/udocker jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-lemon-hippopotamus.sh
-        container: qc.sty_sunny-coral-civet
+        - /usr/bin/env sh .sqa/script.boozy-flax-havanese.sh
+        container: qc.sty_ugly-xanthic-iguana
   QC.Ver:
     repos:
       github.com/orviz/udocker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-lavender-rhinoceros.sh
-        container: qc.ver_grumpy-black-tamarin
-timeout: 5400
+        - /usr/bin/env sh .sqa/script.hilly-khaki-jellyfish.sh
+        container: qc.ver_tasty-sepia-badger
+timeout: 1800
