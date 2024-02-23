@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: feature/fair-epos-prototype
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/indigo-dc/udocker:
       branch: master
@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-cardinal-oriole.sh
-        container: qc.acc_freaky-jade-centipede
+        - /usr/bin/env sh .sqa/script.wheezy-buff-gar.sh
+        container: qc.acc_blurry-harlequin-hound
   QC.Doc:
     repos:
       github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-chocolate-monster.sh
-        container: qc.doc_beady-chartreuse-millipede
+        - /usr/bin/env sh .sqa/script.grumpy-olivine-okapi.sh
+        container: qc.doc_craggy-russet-goat
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-saffron-falcon.sh
-        container: qc.doc_boozy-asparagus-zebu
+        - /usr/bin/env sh .sqa/script.snoopy-bronze-flounder.sh
+        container: qc.doc_woolly-ochre-uguisu
   QC.Lic:
     repos:
       github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-corn-kingfisher.sh
-        container: qc.lic_homely-crimson-butterfly
+        - /usr/bin/env sh .sqa/script.crappy-saffron-cuscus.sh
+        container: qc.lic_lumpy-platinum-beagle
   QC.Ver:
     repos:
       github.com/indigo-dc/udocker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-indigo-dodo.sh
-        container: qc.ver_fuzzy-dandelion-ferret
+        - /usr/bin/env sh .sqa/script.gimpy-beige-ocelot.sh
+        container: qc.ver_leaky-celadon-coyote
 timeout: 5400
