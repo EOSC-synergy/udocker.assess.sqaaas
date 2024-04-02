@@ -2750,23 +2750,23 @@
             },
             "data": {
                 "entityType": "Assertion",
-                "entityId": "rS_nPj_KQ2KXdTDVUfGx9w",
-                "openBadgeId": "https://api.eu.badgr.io/public/assertions/rS_nPj_KQ2KXdTDVUfGx9w",
-                "createdAt": "2024-04-02T09:56:05.446784623Z",
+                "entityId": "nm9V6PZ3QkWPCvhS3-DfsA",
+                "openBadgeId": "https://api.eu.badgr.io/public/assertions/nm9V6PZ3QkWPCvhS3-DfsA",
+                "createdAt": "2024-04-02T09:56:54.798362782Z",
                 "createdBy": "aS1lWKgIR4u8bGjPZUzAyg",
                 "badgeclass": "IDUsZJpNQPuiJpPwmJ8iJw",
                 "badgeclassOpenBadgeId": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
                 "issuer": "aS1lWKgIR4u8bGjPZUzAyg",
                 "issuerOpenBadgeId": "https://api.eu.badgr.io/public/issuers/aS1lWKgIR4u8bGjPZUzAyg",
-                "image": "https://api.eu.badgr.io/public/assertions/rS_nPj_KQ2KXdTDVUfGx9w/image",
+                "image": "https://api.eu.badgr.io/public/assertions/nm9V6PZ3QkWPCvhS3-DfsA/image",
                 "recipient": {
-                    "identity": "sha256$ab176e5c1529692d87aeb54fbe20c3678bdb9d7c1e09aaf6c0ab895a57fb0c58",
+                    "identity": "sha256$1ff769ed41911277bc0c17fbd97faad22afed482c50a5e24ccc1c42698b77631",
                     "hashed": true,
                     "type": "url",
-                    "salt": "aH2cbQ7vQ4A4Szcj",
+                    "salt": "xkaZe5JmvlQicdHT",
                     "plaintextIdentity": "https://github.com/indigo-dc/udocker"
                 },
-                "issuedOn": "2024-04-02T09:56:05.446788348Z",
+                "issuedOn": "2024-04-02T09:56:54.798367544Z",
                 "narrative": "SQAaaS assessment results for repository https://github.com/indigo-dc/udocker (commit: 06b68ca65e90b7f937aca009c4f5aac7872d216a, branch/tag: devel3)",
                 "evidence": [
                     {
@@ -2784,7 +2784,7 @@
                 "expires": null,
                 "extensions": {},
                 "assertionRef": {
-                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/rS_nPj_KQ2KXdTDVUfGx9w"
+                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/nm9V6PZ3QkWPCvhS3-DfsA"
                 },
                 "badgeRef": {
                     "badgeUrl": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw"
@@ -2796,10 +2796,10 @@
                 "source": "local",
                 "sourceUrl": null,
                 "originalJson": null,
-                "imagePath": "uploads/badges/assertion-rS_nPj_KQ2KXdTDVUfGx9w.png"
+                "imagePath": "uploads/badges/assertion-nm9V6PZ3QkWPCvhS3-DfsA.png"
             },
-            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/rS_nPj_KQ2KXdTDVUfGx9w?identity__url=https%3A//github.com/EOSC-synergy/udocker.assess.sqaaas/commit/24338bcfa9e002ceb37bc440f70e36c91ede789e\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/rS_nPj_KQ2KXdTDVUfGx9w/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
-            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FrS_nPj_KQ2KXdTDVUfGx9w?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fudocker.assess.sqaaas%2Fcommit%2F24338bcfa9e002ceb37bc440f70e36c91ede789e&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fudocker.assess.sqaaas%2Fcommit%2F24338bcfa9e002ceb37bc440f70e36c91ede789e"
+            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/nm9V6PZ3QkWPCvhS3-DfsA?identity__url=https%3A//github.com/EOSC-synergy/udocker.assess.sqaaas/commit/24338bcfa9e002ceb37bc440f70e36c91ede789e\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/nm9V6PZ3QkWPCvhS3-DfsA/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
+            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2Fnm9V6PZ3QkWPCvhS3-DfsA?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fudocker.assess.sqaaas%2Fcommit%2F24338bcfa9e002ceb37bc440f70e36c91ede789e&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fudocker.assess.sqaaas%2Fcommit%2F24338bcfa9e002ceb37bc440f70e36c91ede789e"
         }
     }
 }
