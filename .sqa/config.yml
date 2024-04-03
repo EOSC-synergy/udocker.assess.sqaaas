@@ -15,60 +15,60 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-ivory-lynx.sh
-        container: qc.acc_goopy-sangria-donkey
+        - /usr/bin/env sh .sqa/script.shaggy-sapphire-antelope.sh
+        container: qc.acc_skanky-cream-bonobo
   QC.Doc:
     repos:
       github.com/indigo-dc/udocker find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-beige-ferret.sh
-        container: qc.doc_trippy-olive-gorilla
+        - /usr/bin/env sh .sqa/script.stuffy-salmon-lynx.sh
+        container: qc.doc_muggy-aqua-emu
       github.com/indigo-dc/udocker git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-indigo-tiger.sh
-        container: qc.doc_sleazy-khaki-tapir
+        - /usr/bin/env sh .sqa/script.blurry-cobalt-toucan.sh
+        container: qc.doc_homely-cinnabar-duck
       github.com/indigo-dc/udocker markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-azure-bison.sh
-        container: qc.doc_pretty-aqua-hippopotamus
+        - /usr/bin/env sh .sqa/script.nippy-harlequin-foxhound.sh
+        container: qc.doc_jumpy-black-audemer
   QC.Lic:
     repos:
       github.com/indigo-dc/udocker licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-copper-dollar.sh
-        container: qc.lic_snoopy-mustard-dalmatian
+        - /usr/bin/env sh .sqa/script.muggy-cream-serval.sh
+        container: qc.lic_randy-asparagus-olm
   QC.Met:
     repos:
       github.com/indigo-dc/udocker validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-smalt-eel.sh
-        container: qc.met_queasy-vermilion-buzzard
+        - /usr/bin/env sh .sqa/script.woolly-ochre-flounder.sh
+        container: qc.met_cloudy-gold-drever
   QC.Sec:
     repos:
       github.com/indigo-dc/udocker bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-magnolia-dragonfly.sh
-        container: qc.sec_cranky-xanthic-birman
+        - /usr/bin/env sh .sqa/script.lumpy-khaki-monkey.sh
+        container: qc.sec_chummy-amber-gerbil
   QC.Sty:
     repos:
       github.com/indigo-dc/udocker flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-periwinkle-serval.sh
-        container: qc.sty_shabby-salmon-swan
+        - /usr/bin/env sh .sqa/script.baggy-ochre-newfoundland.sh
+        container: qc.sty_chummy-chartreuse-angora
       github.com/indigo-dc/udocker jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-periwinkle-elephant.sh
-        container: qc.sty_squeaky-chartreuse-molly
+        - /usr/bin/env sh .sqa/script.droopy-jade-wolfhound.sh
+        container: qc.sty_gamy-pink-shrimp
   QC.Uni:
     repos:
       github.com/indigo-dc/udocker pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-chocolate-wolf.sh
-        container: qc.uni_beady-gold-chow
+        - /usr/bin/env sh .sqa/script.muggy-violet-yak.sh
+        container: qc.uni_boozy-beige-squirt
   QC.Ver:
     repos:
       github.com/indigo-dc/udocker get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-auburn-quokka.sh
-        container: qc.ver_flabby-myrtle-heron
+        - /usr/bin/env sh .sqa/script.lovely-pumpkin-wasp.sh
+        container: qc.ver_trippy-beige-bombay
 timeout: 5400
