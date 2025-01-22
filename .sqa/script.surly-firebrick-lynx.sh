@@ -5,5 +5,5 @@
 
 (
 cd github.com/indigo-dc/udocker &&
-    mdl --json .
+    git rev-parse --is-inside-work-tree 
 )
